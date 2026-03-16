@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Image Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="preview-wrapper">
+        <canvas id="previewCanvas"></canvas>
+        
+        <div class="overlay-input image-input-overlay" id="imageInputOverlay">
+          <input 
+            type="file" 
+            id="imageInput" 
+            accept="image/*" 
+            class="overlay-input-field image-input"
+          />
+          <div class="image-loader" id="imageLoader" style="display: none;">
+            <div class="spinner"></div>
+          </div>
+        </div>
+        
+        <div class="overlay-input name-input-overlay" id="nameInputOverlay">
+          <input 
+            type="text" 
+            id="nameInput" 
+            placeholder="Enter name" 
+            class="overlay-input-field name-input"
+          />
+        </div>
+        
+        <button id="downloadBtn" class="download-btn">Download Image</button>
+      </div>
+    </div>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
